@@ -28,7 +28,9 @@
       <div class="logo">Segura Viudas</div>
 
       <nav class="nav">
-        <button class="nav-toggle"><span></span><span></span></button>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span>
+        </button>
         <ul class="nav-list">
           <li><a href="#hero">Home</a></li>
           <li><a href="#story">Story</a></li>
@@ -38,15 +40,22 @@
           <li><a href="#wine">Wine</a></li>
           <li><a href="#tasting">Tasting</a></li>
           <li><a href="#pairing">Pairing</a></li>
+          <li><a href="#links">Links</a></li>
           <li><a href="#awards">Awards</a></li>
           <li><a href="#collection">Collection</a></li>
           <li><a href="#faq">FAQ</a></li>
+          <li><a href="#deep-dive">Deep Dive</a></li>
         </ul>
       </nav>
 
-      <div class="lang-switch">
-        <button class="lang-btn active" data-lang="ja">日本語</button>
-        <button class="lang-btn" data-lang="en">EN</button>
+      <div class="header-tools">
+        <div class="lang-switch">
+          <button class="lang-btn" data-lang="ja">日本語</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-toggle-icon">☾</span>
+        </button>
       </div>
     </header>
 
@@ -68,8 +77,8 @@
         </p>
         <p class="hero-lead en">
           Where heritage ascends in quiet, delicate bubbles.<br />
-          Time‑honored craftsmanship refined in Penedès.<br />
-          A bottle reserved for moments of quiet elegance.
+          Long aging brings depth and a refined finish.<br />
+          A treasure from Penedès for your most special moments.
         </p>
 
         <a href="#story" class="btn ja">詳しく見る</a>
@@ -91,19 +100,19 @@
           <article class="text-block reveal">
             <p class="ja">
               Segura Viudasは、カタルーニャの大地とともに歩んできたワイナリー。
+              Brut Reserva Heredadは、その哲学の象徴。
             </p>
-            <p class="ja">Brut Reserva Heredadは、その哲学の象徴。</p>
-
             <p class="en">
-              Rooted in the storied lands of Catalonia,<br />
-              Segura Viudas unites ancient stonework with modern precision.
+              Rooted in the storied lands of Catalonia, Segura Viudas walks with
+              the land. Brut Reserva Heredad is the quiet emblem of that
+              philosophy.
             </p>
           </article>
 
           <figure class="image-block reveal">
             <img
               src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1800&q=80"
-              alt="歴史的な石造りのワイナリー"
+              alt="Historic stone winery"
             />
           </figure>
         </div>
@@ -124,14 +133,18 @@
           <article class="text-block reveal">
             <p class="ja">
               Brut Reserva Heredadは、カタルーニャのペネデス地方で育まれます。
+              石灰質を含む土壌がミネラル感と骨格を与えます。
             </p>
-            <p class="ja">石灰質を含む土壌がミネラル感と骨格を与えます。</p>
+            <p class="en">
+              Brut Reserva Heredad is grown in Penedès, Catalonia.
+              Limestone‑rich soils lend minerality and structure to the wine.
+            </p>
           </article>
 
           <figure class="image-block reveal">
             <img
               src="https://cdn.pixabay.com/photo/2019/02/17/10/58/grapes-4002006_1280.jpg"
-              alt="黒背景に柔らかい光が当たるブドウ"
+              alt="Grapes with soft light"
             />
           </figure>
         </div>
@@ -152,13 +165,16 @@
           <figure class="image-block reveal">
             <img
               src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1800&q=80"
-              alt="醸造家"
+              alt="Winemaker"
             />
           </figure>
 
           <article class="text-block reveal">
             <p class="ja">瓶内二次発酵を守りながら細部にまで目を配ります。</p>
-            <p class="en">Every bottle is shaped with intention.</p>
+            <p class="en">
+              Every bottle is shaped with intention, honoring the traditional
+              method and watching every detail in silence.
+            </p>
           </article>
         </div>
       </div>
@@ -178,41 +194,51 @@
           <article class="method-step">
             <h3>01 Harvest</h3>
             <p class="ja">早朝に収穫されます。</p>
+            <p class="en">Grapes are harvested in the cool of early morning.</p>
           </article>
 
           <article class="method-step">
             <h3>02 Pressing</h3>
             <p class="ja">やさしく圧搾します。</p>
+            <p class="en">Gentle pressing preserves purity and finesse.</p>
           </article>
 
           <article class="method-step">
             <h3>03 First Fermentation</h3>
             <p class="ja">一次発酵でベースワインを仕上げます。</p>
+            <p class="en">The first fermentation shapes the base wine.</p>
           </article>
 
           <article class="method-step">
             <h3>04 Blending</h3>
             <p class="ja">複数のキュヴェをブレンドします。</p>
+            <p class="en">Selected cuvées are blended for balance and depth.</p>
           </article>
 
           <article class="method-step">
             <h3>05 Bottling</h3>
             <p class="ja">ティラージュを加え瓶内発酵へ。</p>
+            <p class="en">
+              Tirage is added and the wine is bottled for second fermentation.
+            </p>
           </article>
 
           <article class="method-step">
             <h3>06 Second Fermentation</h3>
             <p class="ja">自然な泡と複雑さが生まれます。</p>
+            <p class="en">Fine bubbles and complexity slowly emerge.</p>
           </article>
 
           <article class="method-step">
             <h3>07 Aging</h3>
             <p class="ja">24〜30ヶ月以上熟成。</p>
+            <p class="en">Aged 24–30 months or more on lees.</p>
           </article>
 
           <article class="method-step">
             <h3>08 Dosage</h3>
             <p class="ja">最終的な味わいを整えます。</p>
+            <p class="en">Dosage gently refines the final balance.</p>
           </article>
         </div>
       </div>
@@ -232,15 +258,20 @@
           <figure class="image-block reveal">
             <img
               src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?auto=format&fit=crop&w=1800&q=80"
-              alt="ボトル"
+              alt="Bottle"
             />
           </figure>
 
           <article class="text-block reveal">
             <h3 class="accent-title ja">洗練された味わい</h3>
-            <p class="ja">青リンゴ、シトラス、アーモンド、ブリオッシュ。</p>
+            <h3 class="accent-title en">Refined, Layered Expression</h3>
 
-            <ul class="wine-meta">
+            <p class="ja">青リンゴ、シトラス、アーモンド、ブリオッシュ。</p>
+            <p class="en">
+              Green apple, citrus, almond and brioche in quiet harmony.
+            </p>
+
+            <ul class="wine-meta ja">
               <li><strong>産地：</strong> ペネデス</li>
               <li><strong>分類：</strong> Cava（DO）</li>
               <li><strong>品種：</strong> Macabeo / Parellada / Xarel-lo</li>
@@ -248,51 +279,70 @@
               <li><strong>残糖度：</strong> 8 g/L</li>
               <li><strong>酸度：</strong> 6.8 g/L</li>
             </ul>
+
+            <ul class="wine-meta en">
+              <li><strong>Region:</strong> Penedès</li>
+              <li><strong>Classification:</strong> Cava (DO)</li>
+              <li>
+                <strong>Varieties:</strong> Macabeo / Parellada / Xarel‑lo
+              </li>
+              <li><strong>Alcohol:</strong> 12%</li>
+              <li><strong>Residual sugar:</strong> 8 g/L</li>
+              <li><strong>Acidity:</strong> 6.8 g/L</li>
+            </ul>
           </article>
         </div>
-
         <!-- GRAPHS -->
         <div class="wine-graphs reveal">
           <h3 class="graph-title ja">成分と味わいの可視化</h3>
+          <h3 class="graph-title en">Visualizing Structure and Taste</h3>
 
           <div class="graph-grid">
-            <div class="graph-card">
-              <h3 class="graph-subtitle">ブドウ品種の構成比</h3>
+            <div class="graph-card graph-fade">
+              <h3 class="graph-subtitle ja">ブドウ品種の構成比</h3>
+              <h3 class="graph-subtitle en">Grape Variety Composition</h3>
               <canvas id="grapeChart"></canvas>
             </div>
 
-            <div class="graph-card">
-              <h3 class="graph-subtitle">成分（基準値付き）</h3>
+            <div class="graph-card graph-fade">
+              <h3 class="graph-subtitle ja">成分（基準値付き）</h3>
+              <h3 class="graph-subtitle en">Components vs Typical Ranges</h3>
               <canvas id="componentChart"></canvas>
             </div>
 
-            <div class="graph-card">
-              <h3 class="graph-subtitle">味わいレーダー</h3>
+            <div class="graph-card graph-fade">
+              <h3 class="graph-subtitle ja">味わいレーダー</h3>
+              <h3 class="graph-subtitle en">Taste Radar</h3>
               <canvas id="tasteChart"></canvas>
             </div>
 
-            <div class="graph-card">
-              <h3 class="graph-subtitle">熟成期間と複雑さ</h3>
+            <div class="graph-card graph-fade">
+              <h3 class="graph-subtitle ja">熟成期間と複雑さ</h3>
+              <h3 class="graph-subtitle en">Aging vs Complexity</h3>
               <canvas id="agingChart"></canvas>
             </div>
 
-            <div class="graph-card">
-              <h3 class="graph-subtitle">土壌構成</h3>
+            <div class="graph-card graph-fade">
+              <h3 class="graph-subtitle ja">土壌構成</h3>
+              <h3 class="graph-subtitle en">Soil Composition</h3>
               <canvas id="soilChart"></canvas>
             </div>
 
-            <div class="graph-card">
-              <h3 class="graph-subtitle">標高帯の分布</h3>
+            <div class="graph-card graph-fade">
+              <h3 class="graph-subtitle ja">標高帯の分布</h3>
+              <h3 class="graph-subtitle en">Altitude Distribution</h3>
               <canvas id="altitudeChart"></canvas>
             </div>
 
-            <div class="graph-card">
-              <h3 class="graph-subtitle">収穫時期の推移</h3>
+            <div class="graph-card graph-fade">
+              <h3 class="graph-subtitle ja">収穫時期の推移</h3>
+              <h3 class="graph-subtitle en">Harvest Timing</h3>
               <canvas id="harvestChart"></canvas>
             </div>
 
-            <div class="graph-card">
-              <h3 class="graph-subtitle">香りの層・泡・余韻</h3>
+            <div class="graph-card graph-fade">
+              <h3 class="graph-subtitle ja">香りの層・泡・余韻</h3>
+              <h3 class="graph-subtitle en">Aroma, Bubbles, Finish</h3>
               <canvas id="aromaChart"></canvas>
             </div>
           </div>
@@ -305,23 +355,28 @@
       <div class="container">
         <header class="section-header">
           <span class="section-kicker ja">Tasting Notes</span>
+          <span class="section-kicker en">Tasting Notes</span>
           <h2 class="ja">香りと味わい</h2>
+          <h2 class="en">Aroma and Palate</h2>
         </header>
 
         <div class="cards">
           <article class="card reveal">
             <h3>Aroma</h3>
             <p class="ja">熟したリンゴ、白い花、ブリオッシュ。</p>
+            <p class="en">Ripe apple, white flowers and brioche.</p>
           </article>
 
           <article class="card reveal">
             <h3>Texture</h3>
             <p class="ja">繊細な泡、ミネラル感。</p>
+            <p class="en">Fine bubbles and a clear mineral line.</p>
           </article>
 
           <article class="card reveal">
             <h3>Finish</h3>
             <p class="ja">長く続くエレガントな余韻。</p>
+            <p class="en">A long, elegant finish that quietly lingers.</p>
           </article>
         </div>
       </div>
@@ -332,23 +387,132 @@
       <div class="container">
         <header class="section-header">
           <span class="section-kicker ja">Food Pairing</span>
+          <span class="section-kicker en">Food Pairing</span>
           <h2 class="ja">おすすめのペアリング</h2>
+          <h2 class="en">Recommended Pairings</h2>
         </header>
 
         <div class="cards">
-          <article class="card reveal">
-            <h3>Seafood</h3>
+          <article class="card reveal pairing-card" data-type="seafood">
+            <h3 class="ja">Seafood</h3>
+            <h3 class="en">Seafood</h3>
             <p class="ja">牡蠣、帆立、海老。</p>
+            <p class="en">Oysters, scallops and prawns.</p>
           </article>
 
-          <article class="card reveal">
-            <h3>Cheese</h3>
+          <article class="card reveal pairing-card" data-type="cheese">
+            <h3 class="ja">Cheese</h3>
+            <h3 class="en">Cheese</h3>
             <p class="ja">ブリーチーズ、コンテ。</p>
+            <p class="en">Brie and Comté.</p>
           </article>
 
-          <article class="card reveal">
-            <h3>Home Dining</h3>
+          <article class="card reveal pairing-card" data-type="home">
+            <h3 class="ja">Home Dining</h3>
+            <h3 class="en">Home Dining</h3>
             <p class="ja">白身魚のグリル、天ぷら。</p>
+            <p class="en">Grilled white fish and tempura.</p>
+          </article>
+        </div>
+
+        <div id="pairing-detail"></div>
+      </div>
+    </section>
+
+    <!-- LINKS -->
+    <section id="links" class="section dark">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-kicker ja">Links</span>
+          <span class="section-kicker en">Links</span>
+          <h2 class="ja">関連リンク集</h2>
+          <h2 class="en">Related Links</h2>
+        </header>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Segura Viudas Official</h3>
+            <p class="ja">
+              公式ワイナリーサイト（ブランド情報・テクニカルシート）
+            </p>
+            <p class="en">
+              Official winery site with brand information and technical sheets.
+            </p>
+            <a
+              href="https://www.seguraviudas.com"
+              target="_blank"
+              class="btn link-btn"
+            >
+              <span class="ja">公式サイトへ</span>
+              <span class="en">Visit Official Site</span>
+              <span class="link-icon">↗</span>
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>DO Cava Regulatory Council</h3>
+            <p class="ja">
+              カヴァの分類・熟成基準・製法に関する公式ガイドライン
+            </p>
+            <p class="en">
+              Official guidelines on Cava categories, aging and method.
+            </p>
+            <a
+              href="https://www.cava.wine/en/"
+              target="_blank"
+              class="btn link-btn"
+            >
+              <span class="ja">DO Cavaへ</span>
+              <span class="en">Visit DO Cava</span>
+              <span class="link-icon">↗</span>
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Wine Spectator</h3>
+            <p class="ja">国際的なワイン評価・レビュー・トレンド情報</p>
+            <p class="en">International wine ratings, reviews and trends.</p>
+            <a
+              href="https://www.winespectator.com"
+              target="_blank"
+              class="btn link-btn"
+            >
+              <span class="ja">Wine Spectatorへ</span>
+              <span class="en">Visit Wine Spectator</span>
+              <span class="link-icon">↗</span>
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Decanter</h3>
+            <p class="ja">世界的なワインコンペティション・専門記事</p>
+            <p class="en">Global wine competitions and in‑depth articles.</p>
+            <a
+              href="https://www.decanter.com"
+              target="_blank"
+              class="btn link-btn"
+            >
+              <span class="ja">Decanterへ</span>
+              <span class="en">Visit Decanter</span>
+              <span class="link-icon">↗</span>
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Oxford Companion to Wine</h3>
+            <p class="ja">ワイン百科事典（醸造学・テロワール・歴史）</p>
+            <p class="en">
+              Wine encyclopedia covering winemaking, terroir and history.
+            </p>
+            <a
+              href="https://www.oxfordreference.com/display/10.1093/acref/9780198705383.001.0001/acref-9780198705383"
+              target="_blank"
+              class="btn link-btn"
+            >
+              <span class="ja">Oxfordへ</span>
+              <span class="en">Visit Oxford Reference</span>
+              <span class="link-icon">↗</span>
+            </a>
           </article>
         </div>
       </div>
@@ -359,23 +523,28 @@
       <div class="container">
         <header class="section-header">
           <span class="section-kicker ja">Awards</span>
+          <span class="section-kicker en">Awards</span>
           <h2 class="ja">受賞歴と評価</h2>
+          <h2 class="en">Accolades and Reviews</h2>
         </header>
 
         <div class="cards awards-cards">
           <article class="card reveal">
             <h3>Decanter</h3>
-            <p>国際的なコンペティションで高評価。</p>
+            <p class="ja">国際的なコンペティションで高評価。</p>
+            <p class="en">Highly rated in international competitions.</p>
           </article>
 
           <article class="card reveal">
             <h3>Wine Spectator</h3>
-            <p>繊細な泡と複雑な香りが高く評価されています。</p>
+            <p class="ja">繊細な泡と複雑な香りが高く評価されています。</p>
+            <p class="en">Praised for its fine bubbles and layered aromas.</p>
           </article>
 
           <article class="card reveal">
             <h3>IWC</h3>
-            <p>複数ヴィンテージで安定した品質が認められています。</p>
+            <p class="ja">複数ヴィンテージで安定した品質が認められています。</p>
+            <p class="en">Consistent quality across multiple vintages.</p>
           </article>
         </div>
       </div>
@@ -395,16 +564,19 @@
           <article class="card reveal">
             <h3>Reserva</h3>
             <p class="ja">クラシックなスタイルのカヴァ。</p>
+            <p class="en">A classic expression of Cava.</p>
           </article>
 
           <article class="card reveal">
             <h3>Rosé</h3>
             <p class="ja">赤果実のニュアンスを持つ華やかなロゼ。</p>
+            <p class="en">A vibrant rosé with red‑fruit notes.</p>
           </article>
 
           <article class="card reveal">
             <h3>Gran Cuvée</h3>
             <p class="ja">特別なブレンドによる限定キュヴェ。</p>
+            <p class="en">A limited cuvée from a special blend.</p>
           </article>
         </div>
       </div>
@@ -422,26 +594,254 @@
 
         <div class="faq-list reveal">
           <details class="faq-item">
-            <summary>飲み頃の温度は？</summary>
-            <p>約8〜10℃がベスト。冷やしすぎると香りが閉じます。</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>どんなグラスが合いますか？</summary>
-            <p>
-              香りを重視するならシャンパーニュグラス。繊細な泡を楽しむならフルート型。
+            <summary class="ja">飲み頃の温度は？</summary>
+            <summary class="en">What is the ideal serving temperature?</summary>
+            <p class="ja">約8〜10℃がベスト。冷やしすぎると香りが閉じます。</p>
+            <p class="en">
+              Around 8–10°C is ideal. Over‑chilling closes the aromas.
             </p>
           </details>
 
           <details class="faq-item">
-            <summary>開栓後はどのくらい楽しめますか？</summary>
-            <p>冷蔵庫で1〜2日程度。専用ストッパーを使うとより長持ちします。</p>
+            <summary class="ja">どんなグラスが合いますか？</summary>
+            <summary class="en">Which glass shape works best?</summary>
+            <p class="ja">
+              香り重視ならシャンパーニュグラス、泡重視ならフルート型。
+            </p>
+            <p class="en">
+              Use a tulip glass for aroma, or a flute to highlight bubbles.
+            </p>
           </details>
 
           <details class="faq-item">
-            <summary>保存方法のポイントは？</summary>
-            <p>直射日光と高温を避け、一定温度で保管してください。</p>
+            <summary class="ja">開栓後はどのくらい楽しめますか？</summary>
+            <summary class="en">How long can I enjoy it after opening?</summary>
+            <p class="ja">
+              冷蔵庫で1〜2日程度。専用ストッパーを使うとより長持ちします。
+            </p>
+            <p class="en">
+              About 1–2 days in the fridge; a sparkling wine stopper helps
+              preserve it.
+            </p>
           </details>
+
+          <details class="faq-item">
+            <summary class="ja">保存方法のポイントは？</summary>
+            <summary class="en">Any tips for storage?</summary>
+            <p class="ja">直射日光と高温を避け、一定温度で保管してください。</p>
+            <p class="en">
+              Avoid direct sunlight and heat; keep at a stable cool temperature.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+    <!-- DEEP DIVE -->
+    <section id="deep-dive" class="section dark deep-dive">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-kicker ja">Deep Dive</span>
+          <span class="section-kicker en">Deep Dive</span>
+          <h2 class="ja">Segura Viudasをさらに深く知る</h2>
+          <h2 class="en">Explore Segura Viudas in Depth</h2>
+        </header>
+
+        <div class="deep-layout">
+          <div class="deep-line"></div>
+
+          <!-- HISTORY -->
+          <div class="deep-block reveal">
+            <h3 class="accent-title ja">ブランドの歴史年表</h3>
+            <h3 class="accent-title en">Brand History Timeline</h3>
+
+            <ul class="timeline">
+              <li>
+                <span class="timeline-year">1954</span>
+                <p class="ja">Segura Viudas設立。</p>
+                <p class="en">Segura Viudas is founded.</p>
+              </li>
+              <li>
+                <span class="timeline-year">1970</span>
+                <p class="ja">Brut Reserva Heredad誕生。</p>
+                <p class="en">Brut Reserva Heredad is introduced.</p>
+              </li>
+              <li>
+                <span class="timeline-year">1990</span>
+                <p class="ja">最新設備の導入と品質向上。</p>
+                <p class="en">Modern cellar upgrades improve quality.</p>
+              </li>
+              <li>
+                <span class="timeline-year">2020</span>
+                <p class="ja">サステナブル認証を取得。</p>
+                <p class="en">Sustainability certifications achieved.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- WINE GUIDE -->
+          <div class="deep-block reveal">
+            <h3 class="accent-title ja">Wine Guide</h3>
+            <h3 class="accent-title en">Wine Guide</h3>
+
+            <div class="wine-guide-grid">
+              <div>
+                <h4 class="ja">保存</h4>
+                <h4 class="en">Storage</h4>
+                <p class="ja">12〜15℃の一定温度で保管。</p>
+                <p class="en">Store at a stable 12–15°C.</p>
+              </div>
+
+              <div>
+                <h4 class="ja">適温</h4>
+                <h4 class="en">Serving Temperature</h4>
+                <p class="ja">8〜10℃で香りと泡が最適。</p>
+                <p class="en">Serve at 8–10°C for ideal aroma and bubbles.</p>
+              </div>
+
+              <div>
+                <h4 class="ja">グラス</h4>
+                <h4 class="en">Glassware</h4>
+                <p class="ja">香り重視ならチューリップ型。</p>
+                <p class="en">Use a tulip glass for aroma.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TERROIR & AROMA -->
+          <div class="deep-block reveal">
+            <h3 class="accent-title ja">Terroir Map & Aroma Wheel</h3>
+            <h3 class="accent-title en">Terroir Map & Aroma Wheel</h3>
+
+            <div class="deep-grid">
+              <div class="deep-card">
+                <h4 class="ja">ペネデスの地図</h4>
+                <h4 class="en">Map of Penedès</h4>
+                <img
+                  src="./img/penedes-map.png"
+                  alt="Penedès map"
+                  class="map-img"
+                  loading="lazy"
+                />
+                <p class="ja">標高・土壌・畑の位置を示す簡易マップ。</p>
+                <p class="en">
+                  A simple map showing altitude, soils and vineyards.
+                </p>
+              </div>
+
+              <div class="deep-card">
+                <h4 class="ja">Aroma Wheel</h4>
+                <h4 class="en">Aroma Wheel</h4>
+                <canvas id="aromaWheelChart"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <!-- AWARDS DETAIL -->
+          <div class="deep-block reveal">
+            <h3 class="accent-title ja">受賞歴の詳細</h3>
+            <h3 class="accent-title en">Awards in Detail</h3>
+
+            <div class="cards">
+              <article class="card">
+                <h4>Decanter</h4>
+                <p class="ja">複数年で90点以上を獲得。</p>
+                <p class="en">Scores above 90 points across multiple years.</p>
+              </article>
+
+              <article class="card">
+                <h4>Wine Spectator</h4>
+                <p class="ja">泡の繊細さとバランスが高評価。</p>
+                <p class="en">Praised for fine bubbles and balance.</p>
+              </article>
+
+              <article class="card">
+                <h4>IWC</h4>
+                <p class="ja">スタイルの一貫性が評価。</p>
+                <p class="en">Recognized for stylistic consistency.</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- COLLECTION DETAIL -->
+          <div class="deep-block reveal">
+            <h3 class="accent-title ja">Collection Detail</h3>
+            <h3 class="accent-title en">Collection Detail</h3>
+
+            <div class="cards">
+              <article class="card">
+                <h4>Reserva</h4>
+                <p class="ja">伝統的なブレンドによるクラシックスタイル。</p>
+                <p class="en">Classic style shaped by traditional blending.</p>
+              </article>
+
+              <article class="card">
+                <h4>Rosé</h4>
+                <p class="ja">赤果実のニュアンスと繊細な泡。</p>
+                <p class="en">Red‑fruit nuances with delicate bubbles.</p>
+              </article>
+
+              <article class="card">
+                <h4>Gran Cuvée</h4>
+                <p class="ja">特別区画のブドウを使用した限定キュヴェ。</p>
+                <p class="en">Limited cuvée from selected parcels.</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- SUSTAINABILITY -->
+          <div class="deep-block reveal">
+            <h3 class="accent-title ja">Sustainability</h3>
+            <h3 class="accent-title en">Sustainability</h3>
+
+            <div class="cards">
+              <article class="card">
+                <h4 class="ja">畑の管理</h4>
+                <h4 class="en">Vineyard Care</h4>
+                <p class="ja">土壌保全と生物多様性を重視。</p>
+                <p class="en">Focus on soil health and biodiversity.</p>
+              </article>
+
+              <article class="card">
+                <h4 class="ja">エネルギー</h4>
+                <h4 class="en">Energy</h4>
+                <p class="ja">再生可能エネルギーを積極活用。</p>
+                <p class="en">Increasing use of renewable energy.</p>
+              </article>
+
+              <article class="card">
+                <h4 class="ja">認証</h4>
+                <h4 class="en">Certifications</h4>
+                <p class="ja">環境配慮型の認証を取得。</p>
+                <p class="en">Environmental certifications achieved.</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- VIDEO -->
+          <div class="deep-block reveal">
+            <div class="deep-grid">
+              <div class="deep-card">
+                <h4 class="ja">ブランド動画</h4>
+                <h4 class="en">Brand Video</h4>
+                <div class="video-wrapper">
+                  <iframe
+                    src="https://www.youtube.com/embed/ODn-N5YhA4E"
+                    title="Brand Video"
+                    frameborder="0"
+                    allow="
+                      accelerometer;
+                      autoplay;
+                      clipboard-write;
+                      encrypted-media;
+                      gyroscope;
+                      picture-in-picture;
+                    "
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -464,7 +864,8 @@
     <footer class="site-footer">
       <div class="container">
         <div class="footer-logo">Segura Viudas</div>
-        <p>Brut Reserva Heredad – Premium Cava Collection</p>
+        <p class="ja">Brut Reserva Heredad – Premium Cava Collection</p>
+        <p class="en">Brut Reserva Heredad – Premium Cava Collection</p>
         <div class="footer-line"></div>
         <p>© 2026 Segura Viudas Luxury Showcase</p>
       </div>
@@ -474,12 +875,8 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-    <!-- Vanta.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
-
-    <!-- Main JS -->
     <script src="wine-site.js"></script>
   </body>
 </html>
