@@ -16,14 +16,77 @@ body {
   line-height: 1.8;
   overflow-x: hidden;
 }
-/* THEME */
+
+/* THEME BASE */
+body.theme-dark {
+  background: #050506;
+  color: #f5f5f5;
+}
+
 body.theme-light {
   background: #f5f5f5;
   color: #222;
 }
 
-/* dark セクションの文字色（タイプミス修正済み） */
-body.theme-light .section.dark,
+/* ------------------------------------
+   LIGHT MODE — FIXED HERO COLORS
+------------------------------------ */
+body.theme-light .hero-content,
+body.theme-light .hero-content h1,
+body.theme-light .hero-content p {
+  color: #f5f5f5 !important;
+}
+
+body.theme-light .hero-sub {
+  color: #d4b978 !important;
+}
+
+/* ------------------------------------
+   LIGHT MODE — HEADER / NAV
+------------------------------------ */
+body.theme-light .site-header {
+  background: rgba(245, 245, 245, 0.85);
+}
+
+body.theme-light .logo {
+  color: #111 !important;
+}
+
+body.theme-light .lang-btn {
+  color: #111 !important;
+  border-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+body.theme-light .lang-btn.active {
+  background: rgba(0, 0, 0, 0.1) !important;
+  border-color: #111 !important;
+}
+
+body.theme-light .theme-toggle {
+  color: #111 !important;
+  border-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+body.theme-light .nav-list a {
+  color: #111 !important;
+}
+
+body.theme-light .nav-list a:hover {
+  color: #d4b978 !important;
+}
+
+body.theme-light .nav-toggle span {
+  background: #111 !important;
+}
+
+/* ------------------------------------
+   LIGHT MODE — SECTION.dark
+------------------------------------ */
+body.theme-light .section.dark {
+  background: #0b0b0d !important;
+  color: #fff !important;
+}
+
 body.theme-light .section.dark p,
 body.theme-light .section.dark h2,
 body.theme-light .section.dark h3,
@@ -31,156 +94,47 @@ body.theme-light .section.dark h4 {
   color: #fff !important;
 }
 
-/* カード内テキスト（濃い文字に統一） */
-body.theme-light .card,
-body.theme-light .card p,
-body.theme-light .card h3,
-body.theme-light .card h4 {
-  color: #222 !important;
-}
-
-/* ペアリング詳細 */
-body.theme-light .pairing-detail-box,
-body.theme-light .pairing-detail-box p,
-body.theme-light .pairing-detail-box h3,
-body.theme-light .pairing-detail-box h4 {
-  color: #222 !important;
-}
-
-/* ヘッダー・CTA */
-body.theme-light .site-header {
-  background: rgba(245, 245, 245, 0.85);
-}
-body.theme-light .cta-overlay {
-  background: rgba(255, 255, 255, 0.7);
-}
-
-/* Deep Dive（濃い文字に統一） */
-body.theme-light .deep-card,
-body.theme-light .deep-card p,
-body.theme-light .deep-card h3,
-body.theme-light .deep-card h4 {
-  color: #222 !important;
-}
-
-body.theme-light .accent-title {
-  color: #111 !important;
-}
-
-body.theme-light .timeline-year {
-  color: #111 !important;
-}
-
-body.theme-light .deep-grid p,
-body.theme-light .deep-grid h4 {
-  color: #222 !important;
-}
-
-/* FAQ */
-body.theme-light summary {
-  color: #222 !important;
-}
-/* LIGHT MODE — FORCE OVERRIDES */
-
-/* text-block */
-body.theme-light .text-block p {
-  color: #222 !important;
-}
-
-/* card */
-body.theme-light .card p {
-  color: #222 !important;
-}
-
-/* FAQ */
-body.theme-light .faq-item p {
-  color: #222 !important;
-}
-
-/* accent-title */
-body.theme-light .accent-title {
-  color: #111 !important;
-}
-
-/* timeline-year */
-body.theme-light .timeline-year {
-  color: #111 !important;
-}
 /* ------------------------------------
-   LIGHT MODE — KEEP HERO TEXT FIXED
+   LIGHT MODE — CARDS INSIDE DARK SECTION
 ------------------------------------ */
-body.theme-light .hero-content,
-body.theme-light .hero-content h1,
-body.theme-light .hero-content p,
-body.theme-light .hero-sub {
-  color: #f5f5f5 !important;
-}
-/* ------------------------------------
-   LIGHT MODE — KEEP NAV TEXT FIXED
------------------------------------- */
-body.theme-light .nav-list a {
-  color: black !important;
-}
-
-body.theme-light .nav-toggle span {
-  background: #f5f5f5 !important;
-}
-/* ------------------------------------
-   LIGHT MODE — HEADER TEXT BLACK
------------------------------------- */
-
-/* ロゴ */
-body.theme-light .logo {
-  color: #111 !important;
-}
-
-/* 言語切替ボタン */
-body.theme-light .lang-btn {
-  color: #111 !important;
-  border-color: rgba(0, 0, 0, 0.3) !important;
-}
-body.theme-light .lang-btn.active {
-  background: rgba(0, 0, 0, 0.1) !important;
-  border-color: #111 !important;
-}
-
-/* テーマ切替ボタン */
-body.theme-light .theme-toggle {
-  color: #111 !important;
-  border-color: rgba(0, 0, 0, 0.3) !important;
-}
-
-/* nav list（すでに黒にした分を補強） */
-body.theme-light .nav-list a {
-  color: #111 !important;
-}
-body.theme-light .nav-list a:hover {
-  color: #d4b978 !important;
-}
-
-/* nav toggle（スマホ用ハンバーガー） */
-body.theme-light .nav-toggle span {
-  background: #111 !important;
-}
-/* ------------------------------------
-   4. 通常カード（Tasting / Pairing / Collection / Awards）
------------------------------------- */
-body.theme-light .card {
-  background: #fafafa !important; /* 柔らかい白 */
+body.theme-light .section.dark .card {
+  background: #fafafa !important;
   border-color: rgba(0, 0, 0, 0.12) !important;
 }
 
-body.theme-light .card h3,
-body.theme-light .card h4,
-body.theme-light .card p {
+body.theme-light .section.dark .card h3,
+body.theme-light .section.dark .card h4,
+body.theme-light .section.dark .card p {
   color: #111 !important;
 }
 
 /* ------------------------------------
-   5. Pairing Detail（写真＋説明）
+   LIGHT MODE — DEEP CARD
+------------------------------------ */
+body.theme-light .deep-card {
+  background: #ffffff !important;
+  border-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+body.theme-light .deep-card h3,
+body.theme-light .deep-card h4,
+body.theme-light .deep-card p {
+  color: #111 !important;
+}
+
+body.theme-light .accent-title {
+  color: #111 !important;
+}
+
+body.theme-light .timeline-year {
+  color: #111 !important;
+}
+
+/* ------------------------------------
+   LIGHT MODE — PAIRING DETAIL
 ------------------------------------ */
 body.theme-light .pairing-detail-box {
-  background: #ffffff !important; /* 写真とのコントラスト最大化 */
+  background: #ffffff !important;
   border-color: rgba(0, 0, 0, 0.12) !important;
 }
 
@@ -191,7 +145,18 @@ body.theme-light .pairing-detail-box p {
 }
 
 /* ------------------------------------
-   7. CTA（背景写真の上の半透明ボックス）
+   LIGHT MODE — FAQ
+------------------------------------ */
+body.theme-light summary {
+  color: #111 !important;
+}
+
+body.theme-light .faq-item p {
+  color: #222 !important;
+}
+
+/* ------------------------------------
+   LIGHT MODE — CTA
 ------------------------------------ */
 body.theme-light .cta-overlay {
   background: rgba(255, 255, 255, 0.85) !important;
@@ -202,6 +167,7 @@ body.theme-light .cta-overlay p,
 body.theme-light .cta-overlay .btn {
   color: #111 !important;
 }
+
 /* LOADER */
 #loader {
   position: fixed;
@@ -215,11 +181,12 @@ body.theme-light .cta-overlay .btn {
     opacity 0.8s ease,
     visibility 0.8s ease;
 }
+
 #loader.hide {
   opacity: 0;
-
   visibility: hidden;
 }
+
 .loader-logo {
   font-family: 'Cormorant Garamond', serif;
   font-size: 32px;
@@ -245,6 +212,7 @@ body.theme-light .cta-overlay .btn {
     box-shadow 0.4s,
     padding 0.4s;
 }
+
 .site-header.scrolled {
   background: rgba(5, 5, 6, 0.95);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
@@ -269,11 +237,13 @@ body.theme-light .cta-overlay .btn {
   display: flex;
   align-items: center;
 }
+
 .nav-list {
   list-style: none;
   display: flex;
   gap: 18px;
 }
+
 .nav-list a {
   color: #f5f5f5;
   text-decoration: none;
@@ -281,6 +251,7 @@ body.theme-light .cta-overlay .btn {
   letter-spacing: 1px;
   transition: color 0.3s;
 }
+
 .nav-list a:hover {
   color: #d4b978;
 }
@@ -298,6 +269,7 @@ body.theme-light .cta-overlay .btn {
   gap: 5px;
   cursor: pointer;
 }
+
 .nav-toggle span {
   width: 20px;
   height: 2px;
@@ -310,6 +282,7 @@ body.theme-light .cta-overlay .btn {
   display: flex;
   gap: 8px;
 }
+
 .lang-btn {
   background: transparent;
   border: 1px solid rgba(212, 185, 120, 0.4);
@@ -319,6 +292,7 @@ body.theme-light .cta-overlay .btn {
   border-radius: 999px;
   cursor: pointer;
 }
+
 .lang-btn.active {
   background: rgba(212, 185, 120, 0.18);
   border-color: #d4b978;
@@ -334,6 +308,7 @@ body.theme-light .cta-overlay .btn {
   cursor: pointer;
   font-size: 12px;
 }
+
 .theme-toggle-icon {
   font-size: 14px;
 }
@@ -348,6 +323,7 @@ body.theme-light .cta-overlay .btn {
   text-align: center;
   padding: 0 7%;
 }
+
 #vanta-bg {
   position: absolute;
   inset: 0;
@@ -388,6 +364,7 @@ body.theme-light .cta-overlay .btn {
     background 0.3s,
     color 0.3s;
 }
+
 .btn:hover {
   background: #d4b978;
   color: #111;
@@ -397,6 +374,7 @@ body.theme-light .cta-overlay .btn {
 .section {
   padding: 120px 7%;
 }
+
 .section.dark {
   background: #0b0b0d;
 }
@@ -454,12 +432,14 @@ body.theme-light .cta-overlay .btn {
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
+
 .method-step {
   background: #0f0f11;
   border-radius: 14px;
   padding: 18px 16px;
   border: 1px solid rgba(212, 185, 120, 0.25);
 }
+
 .method-step h3 {
   color: #d4b978;
   font-size: 18px;
@@ -472,6 +452,7 @@ body.theme-light .cta-overlay .btn {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
+
 .card {
   background: rgba(10, 10, 12, 0.7);
   border: 1px solid rgba(212, 185, 120, 0.25);
@@ -479,6 +460,7 @@ body.theme-light .cta-overlay .btn {
   padding: 30px 26px;
   backdrop-filter: blur(10px);
 }
+
 .card h3,
 .card h4 {
   color: #d4b978;
@@ -528,6 +510,7 @@ body.theme-light .cta-overlay .btn {
   color: #d4b978;
   margin-bottom: 12px;
 }
+
 .faq-item p {
   font-size: 15px;
   color: #e0e0e0;
@@ -541,16 +524,19 @@ body.theme-light .cta-overlay .btn {
   padding: 140px 7%;
   text-align: center;
 }
+
 .cta-overlay {
   background: rgba(0, 0, 0, 0.55);
   padding: 80px 40px;
   border-radius: 20px;
 }
+
 .cta-kicker {
   color: #d4b978;
   letter-spacing: 3px;
   margin-bottom: 14px;
 }
+
 .cta h2 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 36px;
@@ -563,12 +549,14 @@ body.theme-light .cta-overlay .btn {
   text-align: center;
   padding: 60px 20px;
 }
+
 .footer-logo {
   font-family: 'Cormorant Garamond', serif;
   color: #d4b978;
   font-size: 28px;
   letter-spacing: 4px;
 }
+
 .footer-line {
   width: 110px;
   height: 1px;
@@ -630,7 +618,6 @@ body.theme-light .cta-overlay .btn {
   object-fit: cover;
   border-radius: 10px;
 }
-
 /* DEEP DIVE */
 .deep-dive {
   position: relative;
@@ -662,6 +649,7 @@ body.theme-light .cta-overlay .btn {
   list-style: none;
   margin-top: 12px;
 }
+
 .timeline-year {
   display: inline-block;
   min-width: 80px;
@@ -699,6 +687,7 @@ body.theme-light .cta-overlay .btn {
   padding-bottom: 56.25%;
   height: 0;
 }
+
 .video-wrapper iframe {
   position: absolute;
   inset: 0;

@@ -470,7 +470,7 @@ const pairingData = {
         descEn: 'Creaminess pairs beautifully with the fine mousse.',
         recipeJa: '常温に戻してクラッカーと一緒に。',
         recipeEn: 'Serve at room temperature with crackers.',
-        img: './img/bully-cheese.png',
+        img: '/img/bully-cheese.png',
       },
       {
         nameJa: 'コンテチーズ',
@@ -479,7 +479,7 @@ const pairingData = {
         descEn: 'Nutty notes echo the wine’s layered aromas.',
         recipeJa: '薄くスライスしてそのまま。',
         recipeEn: 'Slice thinly and serve as is.',
-        img: './img/wine-konte-cheese.png',
+        img: '/img/wine-konte-cheese.png',
       },
     ],
   },
@@ -495,7 +495,7 @@ const pairingData = {
         descEn: 'Delicate umami harmonizes with the fruit.',
         recipeJa: '塩・オリーブオイルで焼くだけ。レモンを添えると完璧。',
         recipeEn: 'Grill with salt and olive oil; finish with lemon.',
-        img: './img/shiromi-grilled-fish.png',
+        img: '/img/shiromi-grilled-fish.png',
       },
       {
         nameJa: '天ぷら（海老・野菜）',
@@ -504,7 +504,7 @@ const pairingData = {
         descEn: 'The toasted notes match the long finish.',
         recipeJa: '市販の天ぷら粉でOK。揚げたてを塩で。',
         recipeEn: 'Use tempura batter mix; serve freshly fried with salt.',
-        img: './img/tempura.png',
+        img: '/img/tempura.png',
       },
     ],
   },
@@ -573,8 +573,10 @@ function initThemeToggle() {
     const icon = btn.querySelector('.theme-toggle-icon');
     if (icon) icon.textContent = isLight ? '☀' : '☾';
 
-    // テーマ切り替え後に Reveal を再初期化
-    initReveal();
+    // GSAP の再初期化ではなく、ScrollTrigger のリフレッシュに変更
+    if (window.ScrollTrigger) {
+      ScrollTrigger.refresh();
+    }
   });
 }
 
@@ -592,7 +594,6 @@ function initScrollLine() {
 
     if (rect.top < windowHeight && rect.bottom > 0) {
       const visible = 1 - Math.max(0, rect.top) / (rect.height + windowHeight);
-
       const scale = Math.min(Math.max(visible, 0), 1);
       line.style.transform = `scaleY(${scale})`;
     }

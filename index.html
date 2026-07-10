@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="wine-site.css" />
   </head>
 
-  <body>
+  <body class="theme-dark">
     <!-- LOADER -->
     <div id="loader">
       <div class="loader-logo">SEGURA VIUDAS</div>
@@ -50,7 +50,7 @@
 
       <div class="header-tools">
         <div class="lang-switch">
-          <button class="lang-btn" data-lang="ja">日本語</button>
+          <button class="lang-btn active" data-lang="ja">日本語</button>
           <button class="lang-btn" data-lang="en">EN</button>
         </div>
         <button class="theme-toggle" aria-label="Toggle theme">
@@ -292,6 +292,7 @@
             </ul>
           </article>
         </div>
+
         <!-- GRAPHS -->
         <div class="wine-graphs reveal">
           <h3 class="graph-title ja">成分と味わいの可視化</h3>
@@ -636,6 +637,7 @@
         </div>
       </div>
     </section>
+
     <!-- DEEP DIVE -->
     <section id="deep-dive" class="section dark deep-dive">
       <div class="container">
@@ -717,7 +719,7 @@
                 <h4 class="ja">ペネデスの地図</h4>
                 <h4 class="en">Map of Penedès</h4>
                 <img
-                  src="./img/penedes-map.png"
+                  src="/img/penedes-map.png"
                   alt="Penedès map"
                   class="map-img"
                   loading="lazy"
