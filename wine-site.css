@@ -28,9 +28,7 @@ body.theme-light {
   color: #222;
 }
 
-/* ------------------------------------
-   LIGHT MODE — FIXED HERO COLORS
------------------------------------- */
+/* HERO (ライトモードでも白文字維持) */
 body.theme-light .hero-content,
 body.theme-light .hero-content h1,
 body.theme-light .hero-content p {
@@ -41,76 +39,47 @@ body.theme-light .hero-sub {
   color: #d4b978 !important;
 }
 
-/* ------------------------------------
-   LIGHT MODE — HEADER / NAV
------------------------------------- */
+/* HEADER */
 body.theme-light .site-header {
   background: rgba(245, 245, 245, 0.85);
 }
 
-body.theme-light .logo {
-  color: #111 !important;
-}
-
-body.theme-light .lang-btn {
-  color: #111 !important;
-  border-color: rgba(0, 0, 0, 0.3) !important;
-}
-
-body.theme-light .lang-btn.active {
-  background: rgba(0, 0, 0, 0.1) !important;
-  border-color: #111 !important;
-}
-
+body.theme-light .logo,
+body.theme-light .nav-list a,
+body.theme-light .lang-btn,
 body.theme-light .theme-toggle {
   color: #111 !important;
-  border-color: rgba(0, 0, 0, 0.3) !important;
-}
-
-body.theme-light .nav-list a {
-  color: #111 !important;
-}
-
-body.theme-light .nav-list a:hover {
-  color: #d4b978 !important;
 }
 
 body.theme-light .nav-toggle span {
   background: #111 !important;
 }
 
-/* ------------------------------------
-   LIGHT MODE — SECTION.dark
------------------------------------- */
+/* SECTION.dark → ライトモード時は白背景に変更 */
 body.theme-light .section.dark {
-  background: #0b0b0d !important;
-  color: #fff !important;
-}
-
-body.theme-light .section.dark p,
-body.theme-light .section.dark h2,
-body.theme-light .section.dark h3,
-body.theme-light .section.dark h4 {
-  color: #fff !important;
-}
-
-/* ------------------------------------
-   LIGHT MODE — CARDS INSIDE DARK SECTION
------------------------------------- */
-body.theme-light .section.dark .card {
-  background: #fafafa !important;
-  border-color: rgba(0, 0, 0, 0.12) !important;
-}
-
-body.theme-light .section.dark .card h3,
-body.theme-light .section.dark .card h4,
-body.theme-light .section.dark .card p {
+  background: #ffffff !important;
   color: #111 !important;
 }
 
-/* ------------------------------------
-   LIGHT MODE — DEEP CARD
------------------------------------- */
+body.theme-light .section.dark h2,
+body.theme-light .section.dark h3,
+body.theme-light .section.dark p {
+  color: #111 !important;
+}
+
+/* カード（ライトモード時は白背景＋黒文字） */
+body.theme-light .card {
+  background: #ffffff !important;
+  border-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+body.theme-light .card h3,
+body.theme-light .card h4,
+body.theme-light .card p {
+  color: #111 !important;
+}
+
+/* Deep Card */
 body.theme-light .deep-card {
   background: #ffffff !important;
   border-color: rgba(0, 0, 0, 0.12) !important;
@@ -122,17 +91,7 @@ body.theme-light .deep-card p {
   color: #111 !important;
 }
 
-body.theme-light .accent-title {
-  color: #111 !important;
-}
-
-body.theme-light .timeline-year {
-  color: #111 !important;
-}
-
-/* ------------------------------------
-   LIGHT MODE — PAIRING DETAIL
------------------------------------- */
+/* Pairing Detail */
 body.theme-light .pairing-detail-box {
   background: #ffffff !important;
   border-color: rgba(0, 0, 0, 0.12) !important;
@@ -144,9 +103,7 @@ body.theme-light .pairing-detail-box p {
   color: #111 !important;
 }
 
-/* ------------------------------------
-   LIGHT MODE — FAQ
------------------------------------- */
+/* FAQ */
 body.theme-light summary {
   color: #111 !important;
 }
@@ -155,9 +112,7 @@ body.theme-light .faq-item p {
   color: #222 !important;
 }
 
-/* ------------------------------------
-   LIGHT MODE — CTA
------------------------------------- */
+/* CTA */
 body.theme-light .cta-overlay {
   background: rgba(255, 255, 255, 0.85) !important;
 }
@@ -194,7 +149,7 @@ body.theme-light .cta-overlay .btn {
   color: #d4b978;
 }
 
-/* HEADER */
+/* HEADER BASE */
 .site-header {
   position: fixed;
   top: 0;
@@ -351,7 +306,7 @@ body.theme-light .cta-overlay .btn {
   font-size: 18px;
   opacity: 0.95;
 }
-
+/* BUTTON */
 .btn {
   display: inline-block;
   margin-top: 32px;
@@ -370,7 +325,7 @@ body.theme-light .cta-overlay .btn {
   color: #111;
 }
 
-/* SECTIONS */
+/* SECTION */
 .section {
   padding: 120px 7%;
 }
@@ -468,7 +423,7 @@ body.theme-light .cta-overlay .btn {
   margin-bottom: 14px;
 }
 
-/* GRAPHS */
+/* GRAPH */
 .graph-title {
   font-family: 'Cormorant Garamond', serif;
   font-size: 28px;
@@ -497,7 +452,6 @@ body.theme-light .cta-overlay .btn {
   margin-bottom: 12px;
 }
 
-/* GRAPH FADE */
 .graph-fade {
   opacity: 0;
   transform: translateY(20px);
@@ -571,27 +525,9 @@ body.theme-light .cta-overlay .btn {
   transform: translateY(40px) scale(0.98);
 }
 
-/* LANGUAGE BASE */
+/* LANGUAGE */
 .en {
   display: none;
-}
-
-/* LINKS */
-.link-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.link-icon {
-  font-size: 14px;
-  color: #d4b978;
-  opacity: 0.85;
-  transition: opacity 0.3s;
-}
-
-.link-btn:hover .link-icon {
-  opacity: 1;
 }
 
 /* PAIRING DETAIL */
@@ -618,6 +554,7 @@ body.theme-light .cta-overlay .btn {
   object-fit: cover;
   border-radius: 10px;
 }
+
 /* DEEP DIVE */
 .deep-dive {
   position: relative;

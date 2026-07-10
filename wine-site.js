@@ -179,7 +179,6 @@ Chart.register({
     }
   },
 });
-
 /* ------------------------------
    INIT CHARTS
 ------------------------------ */
@@ -573,7 +572,6 @@ function initThemeToggle() {
     const icon = btn.querySelector('.theme-toggle-icon');
     if (icon) icon.textContent = isLight ? '☀' : '☾';
 
-    // GSAP の再初期化ではなく、ScrollTrigger のリフレッシュに変更
     if (window.ScrollTrigger) {
       ScrollTrigger.refresh();
     }
