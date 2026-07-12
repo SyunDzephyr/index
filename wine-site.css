@@ -57,6 +57,8 @@ body.theme-light .nav-toggle span {
 /* story */
 body.theme-light .text-block p {
   color: black !important;
+body.theme-dark .text-block p {
+  color: #dddddd !important;
 }
 /* SECTION.dark → ライトモード時は白背景に変更 */
 body.theme-light .section.dark {
@@ -374,7 +376,6 @@ body.theme-light .cta-overlay .btn {
 .text-block p {
   margin-bottom: 22px;
   font-size: 17px;
-  color: white;
 }
 
 .accent-title {
