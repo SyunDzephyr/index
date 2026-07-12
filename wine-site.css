@@ -54,7 +54,6 @@ body.theme-light .theme-toggle {
 body.theme-light .nav-toggle span {
   background: #111 !important;
 }
-/* story */
 
 /* SECTION.dark → ライトモード時は白背景に変更 */
 body.theme-light .section.dark {
