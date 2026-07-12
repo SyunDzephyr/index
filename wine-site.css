@@ -56,7 +56,7 @@ body.theme-light .nav-toggle span {
 }
 /* story */
 body.theme-light .text-block.reveal {
-  color: #111 !important;
+  color: black !important;
 }
 /* SECTION.dark → ライトモード時は白背景に変更 */
 body.theme-light .section.dark {
